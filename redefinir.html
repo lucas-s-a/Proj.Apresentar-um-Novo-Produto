@@ -7,7 +7,9 @@
     <title>Esqueci a senha</title>
     <link rel="stylesheet" href="css/style-redefinir.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+    <script src="javascript/redeffunc.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -37,34 +39,28 @@
           </div>
         </nav>
     </header>
+    <main>
+      <div class=" d-flex justify-content-center m-4" >
+        <form>
+          <h2>Esqueceu Sua Senha</h2>
+          <p class="font-weight-lighter">Nos informe seu E-mail para enviarmos instruções de como recuperar sua conta</p>
 
-   <main>
-       <div class=" d-flex justify-content-center m-4" >
-            <form action="" >
-            <p>Redefinir Senha</p>
-
-         <label for="email">E-mail cadastrado
-            <input type="email" name="" id="email"required>
-         </label>
-
-         <label for="password">Senha
-            <input type="password" name="" id="password"required>
-         </label>
-
-         <label for="password">Senha novamente
-            <input type="password" name="" id="password"required>
-         </label>
-
-         <button class="submit"><a href="">Enviar</a></button>
-
-            <a href="login.html">Voltar para login</a>
-
-       
-             </form>
-        </div>
-   </main>
-
-
+          <div>
+            <label for="">E-mail cadastrado</label>
+            <input type="email" id="emailrecad">
+          </div>
+          
+          <br>
+        
+                
+          <button type="submit" id="recadastrar" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+          <div id="Recadastrei"></div>
+                  
+              
+          <a href="login.html">Voltar para login</a>
+        </form>
+      </div>
+    </main>
     <footer id="footer">
         <div class="container-fluid" style="background-color: #1540BF; color: #090E73;">
           <div class="row">

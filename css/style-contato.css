@@ -52,7 +52,7 @@ form .inside{
     border: 1px solid #cbcbcb;
 }
 form .inside:before{
-    content: "Your Preferences";
+    content: "Seu Comentário";
     padding: 5px;
     background: var(--dark-blue2);
     border-radius: 3px;

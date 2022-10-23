@@ -20,27 +20,14 @@
 h1, h2, h3, h4, h5{
     color: #090E73;
 }
-
-#textomain{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
 .imgemlogo2{
     width: 300px;
     height: 300px;
-    margin-top: 1rem;
 }
 .descrição{
-    max-width: 400px;
-    max-height: 200px;
     font-size: 30px;
 }
 .textosmiudos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 10px;
     border-top: 1px solid rgb(0, 0, 1);
 }
@@ -61,7 +48,6 @@ h1, h2, h3, h4, h5{
     }
     .textosmiudos{
         font-size: 5px;
-        margin-top: initial;
     }
     .imgemlogo2{
         width: 100px;

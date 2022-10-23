@@ -54,10 +54,24 @@
         <label for=""></label>Rua:<input type="text" name="" id="rua-cadastro">
         <label for=""></label>Número:<input type="number" name="" id="número-cadastro">
         <label for=""></label>Complemento:<input type="text" name="" id="complemento-cadastro">
-        <button type="submit" id="procurar" class="bg-primary text-white">Enviar</button>
-      </section>
-      <div id="mensagemsucesso" class="m-2 p-2 bg-primary text-white"></div>
-        
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastramento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Cadastro na lista de espera Realizado com Sucesso <br>enviaremos um e-mail de confirmação com novas instruções</div>
+              <div class="modal-footer">
+                  <button type="button" class="btn text-white" style="background-color: #118CD9;" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>   
     </main>
 
     <footer id="footer">
@@ -69,7 +83,7 @@
                 <a class="nav-link" href="servicos.html">Serviços</a>
                 <a class="nav-link" href="lista-espera.html">Lista de Espera</a>
                 <a class="nav-link" href="contato.html">Contato</a>
-                <a class="nav-link" href="login.html"><button type="button" class="btn btn-primary btn-lg" style="background-color: #118CD9;">Area do Aluno</button></a>
+                <a class="nav-link" href="login.html"><button type="button" class="btn text-white btn-lg" style="background-color: #118CD9;">Area do Aluno</button></a>
               </nav>
             </div>
             

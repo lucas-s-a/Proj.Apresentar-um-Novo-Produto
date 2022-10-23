@@ -71,27 +71,3 @@ a:first-of-type{
 a + a{
     margin-top: 1.125rem;
 }
-
-/* botão */
-button{
-    font-size: 0.8125rem;
-    line-height: 2rem;                        /* altura da linha */
-    font-weight: 700;                         /* peso da fonte */
-    text-transform: uppercase;                /* transformação do texto de forma de letras maiusculas */
-    width: 100%;
-    padding: 1rem 2rem;
-    cursor: pointer;                          /* cursor de forma apontar*/
-    background: transparent;
-    color: #000000;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    margin-top: 0.5rem;
-    transition: 0.5s;    
-}
-
-/* faz com que apareça uma cor quando o mursor(mouse) chegar perto */
-button:hover, button:focus{
-    outline: none;
-    background: rgb(11, 75, 134);
-    color: #fff;
-}

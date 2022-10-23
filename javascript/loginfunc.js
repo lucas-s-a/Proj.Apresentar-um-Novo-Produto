@@ -13,6 +13,6 @@ logini.addEventListener('click', e =>{
                 <img class="imglogin" src="imagens2/Su.png" alt="logado">
             </div>
         </main>`;
-    }else{console.log("oi")}
+    }else{console.log("Erro")}
 })
 
