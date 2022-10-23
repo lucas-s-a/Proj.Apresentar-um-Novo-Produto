@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script src="js/roteirofunc.js" defer></script>
+    <title>FrontEnders</title>
+    <script src="javascript/loginfunc.js" defer></script>
     <link rel="stylesheet" href="css/estilopages.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #090E73;">
-          <a class="navbar-brand" href="index.html"><img class="imagelogo" src="imagens2/logo3.png" alt="logo" ></a>
+          <a class="navbar-brand" href="index.html"><img class="imagelogo" src="imagens2/logo3.png" alt="logo" width="200px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,9 +42,9 @@
     <main id="corpo" class="mt-5 mb-5">
       <div class="btn-group dropleft float-right">
         <img width="40px" data-toggle="dropdown" aria-expanded="false" src="imagens2/imso.png" alt="maolibras">
-        <div class="dropdown-menu p-2 mb-2 bg-primary text-white">
+        <div class="dropdown-menu p-2 mb-2 text-white" style="background-color: #118CD9;">
             Acesso em Libras
-        </div><br>
+        </div>
       </div>
       <div class="row">
         <div class="col-xl-4 col-md-5 col-sm-12">
@@ -65,12 +65,12 @@
               <input type="password" placeholder="Digite sua Senha" class="form-control" required minlength="1" id="ctds">
             </div>
             <div class="form-group">
-              <a href="recupsenha.html">Esqueci minha senha</a>
+              <a href="redefinir.html">Esqueci minha senha</a>
               <div class="textosmiudos">
                 <p>Ajuda</p><p>Termos de Serviço</p><p>Privacidade</p>
               </div>
             </div>
-            <button type="submit" id='logou' class="btn btn-primary">Entrar</button>
+            <button type="submit" id='logou' class="btn text-white" style="background-color: #118CD9;">Entrar</button>
           </form>
         </div>
       </div>

@@ -1,0 +1,97 @@
+
+
+
+p{
+    font-size: 1.3125rem;                    
+    font-weight: 700;                         
+    color: #222;
+    margin-bottom: 5rem;                     
+}
+
+form{
+    display: flex;                            
+    flex-direction: column;                  
+    align-items: center;                     
+    width: 100%;
+    max-width: 28rem;                         /* largura maxima */
+    background: #fff;
+    padding: 4rem;
+    border-radius: 0.5rem;                  
+    box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);   /* sombra da caixa */
+}
+/* etiqueta */
+label{
+    width: 100%;
+    color: #777;
+    align-self: flex-start;                  
+    transition: 0.15s linear;                 
+}
+
+/* quando clicar para digitar algo a etiqueta vai mudar para essas definições */
+label:focus-within{                         
+    color: #1540BF;
+}
+
+/* interação com o usuário */
+input{
+    font-size: 1.1875rem;                    /* tamanho da fonte */
+    color: #404040;
+    padding: 1rem 0 0.5rem 0;
+    width: 100%;
+    border: none;
+    border-color: #000000;                 /* cor das bordas */
+    border-bottom-width: 1px;                /* largura das bordas do botão */
+    border-bottom-style: dotted;             /* estilo das bordas do botão de forma potilhado */
+    margin-bottom: 3rem;                     /* margem do botão */
+    transition: 0.15s linear;                /* transição de forma linear*/
+}
+
+/* quando for digitado a interação */
+input:focus{
+    outline: none;                           /* contorno de forma nula */
+    border-color: rgb(0, 0, 0);        /* cor das bordas */
+}
+
+a{
+    text-decoration: none;                 
+}
+
+/* muda a cor das tag A quando chega  com o mouse perto*/
+a:hover, a:focus{                         
+    outline: none;
+    color: #000;
+}
+
+/* dar espaçamento acima das tag A */
+a:first-of-type{                             
+    margin-top: 3rem;                        
+}
+
+/* dar espaçamento entre as tag A */
+a + a{
+    margin-top: 1.125rem;
+}
+
+/* botão */
+button{
+    font-size: 0.8125rem;
+    line-height: 2rem;                        /* altura da linha */
+    font-weight: 700;                         /* peso da fonte */
+    text-transform: uppercase;                /* transformação do texto de forma de letras maiusculas */
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;                          /* cursor de forma apontar*/
+    background: transparent;
+    color: #000000;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0.5s;    
+}
+
+/* faz com que apareça uma cor quando o mursor(mouse) chegar perto */
+button:hover, button:focus{
+    outline: none;
+    background: rgb(11, 75, 134);
+    color: #fff;
+}

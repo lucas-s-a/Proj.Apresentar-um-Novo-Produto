@@ -1,4 +1,5 @@
-let botaoProc = document.querySelector('#procurar')
+const cepchecado = document.querySelector('#cep-cadastro')
+const botaoProc = document.querySelector('#procurar')
 let estadoElement = document.querySelector('#estado-cadastro')
 let cidadeElement = document.querySelector('#cidade-cadastro')
 let bairroElement = document.querySelector('#bairro-cadastro')
@@ -34,10 +35,16 @@ const mostraCep = async(CEP) =>{
     //console.log(bairroElement)
 
 }
-
-botaoProc.addEventListener('click', async(e) =>{
+cepchecado.addEventListener('blur', async(e) =>{
     
     e.preventDefault()
 
     mostraCep()
+})
+
+botaoProc.addEventListener('click', async(e) =>{
+    
+    e.preventDefault()
+    let ms = document.querySelector("#mensagemsucesso");
+    ms.innerHTML = `Cadastro Realizado`
 })

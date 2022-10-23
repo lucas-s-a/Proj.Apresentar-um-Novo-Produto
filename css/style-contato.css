@@ -32,7 +32,7 @@ form .form-group{
     position: relative;
 }
 form .form-group:before{
-    content: "Your Details";
+    content: "Sugestões";
     padding: 5px;
     background: var(--dark-blue2);
     font-size: 14px;
