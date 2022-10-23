@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="js/roteirofunc.js" defer></script>
     <link rel="stylesheet" href="css/estilopages.css">
-    <script src="js/roteirofunc.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="cabeçalho">
         <div>
-            <img class="imgemlogo1" src="imagens2/Libras_3.png" alt="nossapage">
+            <img class="imgemlogo1" src="imagens2/LOGO2.png" alt="nossapage">
         </div>
         <ul id="labelmenu">
             <li>Home</li>
@@ -29,21 +32,29 @@
             <h1>Tradutor de Libras</h1>
             <p class="descrição">Seja Bem vindo de volta, entre e aproveite os recursos e as facilidades que temos a oferecer.</p>
         </div>
-        <div id="formulario">
-            <form action="login.html">
-                <label for="" >E-mail</label><br>
-                <input type="email" id="loginemail" placeholder="Digite seu E-mail"><br>
-                <label for="" >Senha</label><br>
-                <input type="senha" id="loginsenha" placeholder="Digite sua Senha">
-                <div id="logadocomsucesso"></div>
-                <input type="submit" value="Entrar" id="logar"><br>
+        <form class="forms">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" placeholder="Digite seu E-mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" placeholder="Digite sua Senha" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group">
                 <a href="recupsenha.html">Esqueci minha senha</a>
                 <div class="textosmiudos">
                     <p>Ajuda</p><p>Termos de Serviço</p><p>Privacidade</p>
                 </div>
-            </form>
+            </div>
+            <button type="submit" id='logou' class="btn btn-primary">Entrar</button>
+        </form>
+        <div class="btn-group dropleft">
+            <img width="40px" data-toggle="dropdown" aria-expanded="false" class="maozinha" src="imagens2/imso.png" alt="">
+            <div class="dropdown-menu p-2 mb-2 bg-primary text-white">
+                Acesso em Libras
+            </div>
         </div>
-        <div><img width="40px" class="maozinha" src="imagens2/imso.png" alt=""></div>
     </main>
     <footer id="rodapé">
         <div>
