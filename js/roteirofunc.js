@@ -1,32 +1,18 @@
-// lista de espera get's
-/*let lenome = document.querySelector("#listespnome").value
-let leemail = document.querySelector("#listespemail").value
-let lesenha = document.querySelector("#listespsenha").value
-let lesenha2 = document.querySelector("#listespsenha2").value
-let lecep = document.querySelector("#listescep").value
-let leest = document.querySelector("#estado").value
-let lecid = document.querySelector("#cidade").value
-let lebairro = document.querySelector("#bairro").value
-let lerua = document.querySelector("#rua").value
-let lenumero = document.querySelector("#numero").value
-let lecomplet = document.querySelector("#complemento").value
-
-
-
-// Recuperar senha get's
-
-let rsrec = document.querySelector("#eRsenha")
-let rsresp = document.querySelector("#MensagemResposta")*/
-
-// login get's
+const lemail = document.querySelector("#txemail")
+const lsenha = document.querySelector("#ctds")
 const logini = document.querySelector("#logou")
 function lg(){
-    let s = document.querySelector("#corpo");
-    s.innerHTML = `
-    <main id="corpo2">
-        <div>
-            <img src="imagens2/Su.png" alt="logado">
-        </div>
-    </main>`;
+    let z = lemail.value
+    let y = lsenha.value
+    if(z.includes('@') !== false && y !== ''){
+        let s = document.querySelector("#corpo");
+        s.innerHTML = `
+        <main>
+            <div class="d-flex justify-content-center">
+                <img class="imglogin" src="imagens2/Su.png" alt="logado">
+            </div>
+        </main>`;
+    }else{console.log("oi")}
 }
 logini.addEventListener('click',lg)
+

@@ -1,0 +1,26 @@
+
+/*Header*/
+
+
+
+.nav-link{
+    color: #118CD9;
+}
+
+.nav-link:hover{
+    color: #090E73;
+}
+
+.fa-solid{
+    font-size: 4rem;
+    margin: auto;
+    padding-top: 1rem;
+    color: #090E73;
+}
+
+h1, h2, h3, h4, h5{
+    color: #090E73;
+}
+
+
+

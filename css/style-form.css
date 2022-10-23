@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+.nav-link{
+    color: #118CD9;
+}
+
+.nav-link:hover{
+    color: #090E73;
+}
+
+/*Main*/
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
