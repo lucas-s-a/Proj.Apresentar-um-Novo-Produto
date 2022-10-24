@@ -25,6 +25,7 @@ btnrecad.addEventListener('click', async(e) =>{
         </div>
         `
     }else{
+        e.preventDefault()
         let mr = document.querySelector("#Recadastrei")
         mr.innerHTML = `<br>
         <div class="alert alert-warning alert-dismissible fade show" role="alert">

@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnders</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="imagens2/logo3.png">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style-form.css">
+    <link rel="icon" type="image/x-icon" href="imagens2/logo3.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
@@ -23,10 +25,10 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicos.html">Serviços</a>
+              <a class="nav-link" href="servicos.html">Serviços<span class="sr-only">(Página atual)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="lista-espera.html">Lista de Espera<span class="sr-only">(Página atual)</span></a>
+              <a class="nav-link" href="lista-espera.html">Lista de Espera</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contato.html">Contato</a>
@@ -39,22 +41,26 @@
       </nav>
     </header>
 
-    <main id="container" style="background-color: #DFE9F2;"  >
-      
-      <section id="form" style="background-color: #1540bf5d" class="p-2 m-2">
-        <label for="nome-cadastro">Nome:</label><input type="text" name="" id="nome-cadastro">
-        <label for="email-cadastro">E-mail:</label><input type="email" name="" id="email-cadastro">
-        <label for="senha-cadastro">Senha:</label><input type="password" name="" id="senha-cadastro">
-        <label for="confi-senha-cadastro">Confirmar Senha:</label><input type="password" name="" id="confi-senha-cadastro">
-        <label for="rg-cadastro">RG:</label><input type="number" name="" id="rg-cadastro">
-        <label for="cep-cadastro">CEP:</label><input type="text" name="" id="cep-cadastro">
-        <label for=""></label>Estado:<input type="text" name="" id="estado-cadastro">
-        <label for=""></label>Cidade:<input type="text" name="" id="cidade-cadastro">
-        <label for=""></label>Bairro:<input type="text" name="" id="bairro-cadastro">
-        <label for=""></label>Rua:<input type="text" name="" id="rua-cadastro">
-        <label for=""></label>Número:<input type="number" name="" id="número-cadastro">
-        <label for=""></label>Complemento:<input type="text" name="" id="complemento-cadastro">
-        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+    <main id="container" style="background-color: #DFE9F2;">
+
+      <h1>Faça seu Cadastro!</h1>
+
+      <div id="form-externo">
+        <section id="form" style="background-color: #1540bf5d" class="p-2 m-2">
+          <input type="text" name="" id="nome-cadastro" placeholder="Digite seu nome" class="formulario">
+          <input type="email" name="" id="email-cadastro" placeholder="Digite seu email" class="formulario">
+          <input type="password" name="" id="senha-cadastro" placeholder="Digite sua senha" class="formulario">
+          <input type="password" name="" id="confi-senha-cadastro" placeholder="Confirme sua senha" class="formulario">
+          <input type="text" name="" id="rg-cadastro" placeholder="Digite o número do seu RG" class="formulario">
+          <input type="text" name="" id="cep-cadastro" placeholder="Digite seu CEP" class="formulario">
+          <input type="text" name="" id="estado-cadastro" placeholder="Estado" class="formulario">
+          <input type="text" name="" id="cidade-cadastro" placeholder="Cidade" class="formulario">
+          <input type="text" name="" id="bairro-cadastro" placeholder="Bairro" class="formulario">
+          <input type="text" name="" id="rua-cadastro" placeholder="Rua" class="formulario">
+          <input type="text" name="" id="número-cadastro" placeholder="Número da Residência" class="formulario">
+          <input type="text" name="" id="complemento-cadastro" placeholder="Complemento" class="formulario">
+          <div id="botao">
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -71,8 +77,9 @@
             </div>
           </div>
         </div>
-      </section>
-        
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer id="footer">
@@ -123,7 +130,7 @@
   
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="javascript/script.js" defer></script>
+    <script src="javascript/script.js"></script>
     
 </body>
 </html>

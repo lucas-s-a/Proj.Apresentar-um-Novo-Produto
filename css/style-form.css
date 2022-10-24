@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*Header*/
@@ -16,7 +15,7 @@
 
 /*Main*/
 
-#container{
+#form-externo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +23,25 @@
 
 #form{
     display: flex;
+    justify-content:space-evenly ;
     flex-direction: column;
+    border-radius: 5px;
+    width:300px;
     gap: 10px;
+}
+
+.fomulario{
+    width: 100px;
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+#procurar{
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
 }
