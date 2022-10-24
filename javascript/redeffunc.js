@@ -2,11 +2,10 @@ const btnrecad = document.querySelector('#recadastrar')
 const emrecad = document.querySelector('#emailrecad')
 
 btnrecad.addEventListener('click', async(e) =>{
-    
-    e.preventDefault()
     let z = emrecad.value
     if(z.includes('@') !== false && z !== ''){
         let mr = document.querySelector("#Recadastrei");
+        e.preventDefault()
         mr.innerHTML = `
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">

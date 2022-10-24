@@ -30,9 +30,10 @@ form .form-group{
     padding: 30px;
     border-radius: 5px;
     position: relative;
+    border: 1px solid var(--black);
 }
 form .form-group:before{
-    content: "Sugestões";
+    content: "Seus dados";
     padding: 5px;
     background: var(--dark-blue2);
     font-size: 14px;
@@ -52,7 +53,7 @@ form .inside{
     border: 1px solid #cbcbcb;
 }
 form .inside:before{
-    content: "Seu Comentário";
+    content: "Sugestões";
     padding: 5px;
     background: var(--dark-blue2);
     border-radius: 3px;
@@ -67,4 +68,3 @@ form .btn{
 form .btn:focus{
     outline: none;
 }
-
