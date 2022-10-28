@@ -43,10 +43,81 @@
 
     <main id="container" style="background-color: #DFE9F2;">
 
-      <h1>Faça seu Cadastro!</h1>
-
-      <div id="form-externo">
-        <section id="form" style="background-color: #1540bf5d" class="p-2 m-2">
+      <div class="container p-5 mt-4 mb-4 shadow-lg" style="background: #118CD9; border: solid 1px #000; border-radius: 2rem;">
+        <h2 class="text-center" style="color: #090E73;">Faça seu Cadastro!</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="nome-cadastro">Nome completo</label>
+              <input type="text" class="form-control" id="nome-cadastro" placeholder="Nome completo">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="email-cadastro">Email</label>
+              <input type="email" class="form-control" id="email-cadastro" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="senha-cadastro">Senha</label>
+              <input type="password" class="form-control" id="senha-cadastro" placeholder="Senha">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="confi-senha-cadastro">Confirme sua Senha</label>
+              <input type="password" class="form-control" id="confi-senha-cadastro" placeholder="Confirme sua senha">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="cep-cadastro">CEP</label>
+              <input type="text" class="form-control" id="cep-cadastro" placeholder="00000-000">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cidade-cadastro">Cidade</label>
+              <input type="text" class="form-control" id="cidade-cadastro" placeholder="Rio de Janeiro">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="estado-cadastro">Estado</label>
+              <input type="text" class="form-control" id="estado-cadastro" placeholder="RJ">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="rua-cadastro">Endereço</label>
+            <input type="text" class="form-control" id="rua-cadastro" placeholder="Rua Dona Isabel">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="bairro-cadastro">Bairro</label>
+              <input type="text" class="form-control" id="bairro-cadastro" placeholder="Bonsucesso">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="numero-cadastro">Número</label>
+              <input type="text" class="form-control" id="numero-cadastro" placeholder="00">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="complemento-cadastro">Complemento</label>
+              <input type="text" class="form-control" id="complemento-cadastro" placeholder="Complemento">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                <a href="#" style="color: #1540BF;">Li e aceito os Termos e Condições</a>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn text-white" style="background: #1540BF;" id="btn-enviar" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+          <div id="botao">
+              
+          </div>
+        </form>
+      
+        
+        
+        
+        <!--
           <input type="text" name="" id="nome-cadastro" placeholder="Digite seu nome" class="formulario">
           <input type="email" name="" id="email-cadastro" placeholder="Digite seu email" class="formulario">
           <input type="password" name="" id="senha-cadastro" placeholder="Digite sua senha" class="formulario">
@@ -57,29 +128,8 @@
           <input type="text" name="" id="cidade-cadastro" placeholder="Cidade" class="formulario">
           <input type="text" name="" id="bairro-cadastro" placeholder="Bairro" class="formulario">
           <input type="text" name="" id="rua-cadastro" placeholder="Rua" class="formulario">
-          <input type="text" name="" id="número-cadastro" placeholder="Número da Residência" class="formulario">
-          <input type="text" name="" id="complemento-cadastro" placeholder="Complemento" class="formulario">
-          <div id="botao">
-            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Enviar</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cadastramento</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">Cadastro na lista de espera Realizado com Sucesso <br>enviaremos um e-mail de confirmação com novas instruções</div>
-              <div class="modal-footer">
-                  <button type="button" class="btn text-white" style="background-color: #118CD9;" data-dismiss="modal">Ok</button>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </section>
-      </div>
+          <input type="text" name="" id="numero-cadastro" placeholder="Número da Residência" class="formulario">
+          <input type="text" name="" id="complemento-cadastro" placeholder="Complemento" class="formulario">-->
     </main>
 
     <footer id="footer">

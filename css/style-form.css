@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background: #DFE9F2;
+}
+
 /*Header*/
 
 .nav-link{
@@ -15,24 +19,13 @@
 
 /*Main*/
 
-#form-externo{
+/*#form-externo{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    max-width: 400px;
+}*/
 
-#form{
-    display: flex;
-    justify-content:space-evenly ;
-    flex-direction: column;
-    border-radius: 5px;
-    width:300px;
-    gap: 10px;
-}
-
-.fomulario{
-    width: 100px;
-}
 
 #botao{
     display: flex;
